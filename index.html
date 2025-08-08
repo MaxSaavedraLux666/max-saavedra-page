@@ -1,54 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Max Saavedra - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Max Saavedra - Software Engineer</title>
+  <link rel="stylesheet" href="styles.css"/>
   <script defer src="script.js"></script>
 </head>
 <body class="light-mode">
-  <header>
+
+<header class="hero">
+  <div class="hero-content fade-in">
+    <img src="images/profile.png" alt="Profile Picture" class="hero-img"/>
     <h1>Max Saavedra</h1>
-    <p>Software Engineering Student | UNMSM, Peru</p>
-    <button id="toggleMode">Dark Mode</button>
-  </header>
+    <p class="subtitle">Software Engineer | AI Enthusiast | Peru</p>
+    <button id="toggleMode" class="btn">Toggle Dark Mode</button>
+  </div>
+</header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hi! I'm Max Saavedra, a 22-year-old software engineering student at 
-        the Universidad Nacional Mayor de San Marcos in Peru. I'm passionate 
-        about software development and eager to contribute to the global tech 
-        community. This portfolio showcases my projects and achievements.
-      </p>
-    </section>
+<main>
+  <!-- About -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      I am a Software Engineering student at Universidad Nacional Mayor de San Marcos, Peru.
+      Passionate about Artificial Intelligence, software architecture, and innovative problem-solving.
+      My goal is to design impactful technology that improves lives and contributes to global innovation.
+    </p>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Group Projects:</strong> <a href="#">See more</a></li>
-        <li><strong>Basic Projects:</strong> <a href="#">See more</a></li>
-        <li><strong>Intermediate Projects:</strong> <a href="#">See more</a></li>
-        <li><strong>Advanced Projects:</strong> <a href="#">See more</a></li>
-      </ul>
-    </section>
+  <!-- Skills -->
+  <section id="skills" class="fade-in">
+    <h2>Skills & Expertise</h2>
+    <ul class="skills-list">
+      <li>Artificial Intelligence & Machine Learning</li>
+      <li>Full-Stack Web Development</li>
+      <li>Data Science & Analytics</li>
+      <li>Cloud Computing (Huawei, AWS)</li>
+      <li>Automation & RPA</li>
+    </ul>
+  </section>
 
-    <section id="news">
-      <h2>News & Events</h2>
-      <ul>
-        <li><a href="#">Event 1: Hackathon Participation</a></li>
-        <li><a href="#">Event 2: Workshop on AI</a></li>
-        <li><a href="#">Event 3: Guest Lecture on ML</a></li>
-      </ul>
-    </section>
-  </main>
+  <!-- Projects -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Group Projects</h3>
+        <p>Collaborative developments in AI and software systems.</p>
+        <a href="#">Explore</a>
+      </div>
+      <div class="card">
+        <h3>Basic Projects</h3>
+        <p>Foundational software applications and scripts.</p>
+        <a href="#">Explore</a>
+      </div>
+      <div class="card">
+        <h3>Intermediate Projects</h3>
+        <p>Web apps, automation tools, and APIs.</p>
+        <a href="#">Explore</a>
+      </div>
+      <div class="card">
+        <h3>Advanced Projects</h3>
+        <p>Complex AI models, big data pipelines, and deployments.</p>
+        <a href="#">Explore</a>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <a href="contact.html">Contact Me</a>
-    <p>© 2025 Max Saavedra</p>
-  </footer>
+  <!-- Certificates -->
+  <section id="certificates" class="fade-in">
+    <h2>Certificates & Achievements</h2>
+    <div class="gallery">
+      <img src="images/certificado_hcia_ia_trainig_huawei.jpg" alt="HCIA AI Huawei" class="cert-img"/>
+      <img src="images/certificado_hcia_cloud_trainig_huawei.jpg" alt="HCIA Cloud Huawei" class="cert-img"/>
+      <img src="images/certificado_hcia_5g_trainig_huawei.jpg" alt="HCIA 5G Huawei" class="cert-img"/>
+      <img src="images/constancia_fundamentos_java.jpg" alt="Java Fundamentals" class="cert-img"/>
+      <img src="images/certified_Cloud Basics_ Development and Basic Concepts (Spanish).jpg" alt="Cloud Basics" class="cert-img"/>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section id="news" class="fade-in">
+    <h2>News & Events</h2>
+    <ul>
+      <li>Hackathon Participant - AI Challenge</li>
+      <li>Workshop Speaker - Machine Learning for Beginners</li>
+      <li>Guest Lecture Attendee - Future of Cloud Computing</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <a href="contact.html" class="btn">Contact Me</a>
+  <a href="resume.html" class="btn">Resume</a>
+  <p>© 2025 Max Saavedra</p>
+</footer>
+
+<!-- Modal for certificates -->
+<div id="modal" class="modal">
+  <span id="closeModal">&times;</span>
+  <img class="modal-content" id="modalImg"/>
+</div>
+
 </body>
 </html>
-
